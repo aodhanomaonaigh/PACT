@@ -4,20 +4,15 @@
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{paralist}
 
+\def\figline{\rule{\textwidth}{0.3mm}}
+
 \begin{document}
 
 
 
 \title{PACT: \\ {\large Programming ${\land}$ Algorithms $\Rightarrow$ Computational Thinking}}
 
-\author{Aidan Mooney
-  \and James Power
-  \and Rosemary Monahan
-  \and Tom Naughton
-  \and Susan Bergin
-  \and Phil Maguire
-  \and Joe Duffin
-}
+\author{Aidan Mooney \and James F. Power}
 
 \begin{figure}\centering
 \includegraphics[height=.2\textheight]{nuim_large}
@@ -31,7 +26,7 @@ The PACT programme is a partnership between researchers in the Department of Com
 Initially the focus of this partnership is on teaching programming to transition year students, but ultimately the goal is to develop a framework for delivering a short course on \textit{computational thinking} as part of the new Junior Certificate cycle.
 
 
-\section{Motivation}
+\section{Background and Motivation}
 
 NUI Maynooth has been delivering programmes in Computer Science at undergraduate and postgraduate level for 25 years and, since 2012, has been delivering a unique \textit{BSc in Computational Thinking}.  This degree is a blend of Computer Science, Mathematics and Philosophy, and aims to provide a deeper education in computing than the more traditional degrees, which often have a strong vocational orientation.  The PACT initiative aims to build on the visibility of the \textit{Computational Thinking} brand to bring the ideas at the heart of this degree to second-level students.
 
@@ -79,17 +74,80 @@ The goal of the PACT programme is to guide students through the key topics in pr
 
 The PACT group at NUIM has collaborated with teachers across 9 secondary schools to develop a flexible module which will engage Transition Year students.  The focus of the module is not on learning facts about computers but on developing creative ideas and new ways of thinking.  Continuing feedback will be used to expand the module into a full Junior Cycle short course. 
 
-\section{Background}
-The Lero group in the University of Limerick have established and education and outreach programme starting in 2007, and currently deliver Scratch-based material for primary and secondary schools\footnote{\url{http://www.scratch.ie/}}. Lero support teachers, students, parents and schools in Scratch as well as creating extensive lesson plans and teaching material for schools \cite{scratch2013}.
+\section{Related work}
+
+The NCCA has developed a specification for eight Junior Cycle short courses for use from 2014, and one of these is 
+titled \textit{Programming and Coding} \cite{ncca-prog13}.  This is a useful document as it provides an example of addressing the general skills requirements of a short course.  The computing content seems to consists of basic programming skills along with some multimedia (web page) design, with a goal of developing students teamwork skills.  
+
+There is, however, no mention of a broader Computational Thinking agenda, nor any clear indication that the module is even intended to be scientific in nature.  From a Computer Science perspective this curriculum is quite limited in scope (just as its title would suggest), and we would seek to develop a much broader understanding of the core principles of our discipline.
+
+\paragraph{Other initiatives similar to PACT:}
+
+There are at least two current initiatives in Ireland that are similar in some respects to PACT:
+
+\begin{itemize}
+
+\item The Lero group in the University of Limerick  established an education and outreach programme starting in 2007, originally to support teaching using MIT's Scratch environment in Irish post-primary schools.  They have developed a website\footnote{\url{http://www.scratch.ie/}}
+with support for primary and post-primary schools, including extensive lesson plans and teaching material, and run teacher training sessions as well as an annual competition.
+
+While the structure of the Lero initiative is similar to ours, we believe that a graphical language like Scratch is fundamentally limited in terms of teaching programming, even though it may serve as a useful introduction to some programming concepts.  Further, the materials seem to be limited to teaching programming in Scratch, and do not seem to have a broader agenda in Computer Science or Computational Thinking.
+
+\item Bridge21\footnote{\url{http://www.bridge21.ie/}} is an education programme based in Trinity College Dublin and supported by Google.  It claims to be based on a new model of learning that can be adapted for use in secondary schools \cite{conneely13}, and they provide professional development workshops for teachers to train in ``21st Century Computer Science Teaching Skills''. 
+
+This initiative is directly targeting the post-primary (and Junior cycle) area, but appears to be more broadly based than our initiative, recently offering support for English, Maths and History classes.  While the specific Computer Science deliverable is vague, it seem to be based at present on programming (and the Raspberry Pi), and it is not clear what their precise CS agenda is.
+\end{itemize}
+
+Even though both of these groups are established in the field, we believe that their focus in each case lacks a clear, distinctive Computer Science perspective.  Our PACT initiative can fill this gap and, we believe, offers an alternative that provides a deeper insight into the fundamentals of our discipline.
 
 
-Bridge21\footnote{\url{http://www.bridge21.ie/}} is an education programme based in Trinity College which offers a new model of learning that can be adapted for use in secondary schools. They offer professional development workshops for teachers to train in certain areas \cite{conneely13}.
 
-The Computing in Schools project in the United Kingdom looked at the current provision of education in Computing in UK schools, informed by evidence gathered from individuals and organisations with an interest in computing. One of their key findings was that the current delivery of Computing education in many UK schools is highly unsatisfactory. It also noted that there is a need to improve understanding in schools of the nature and scope of Computing. In particular there needs to be recognition that Computer Science is a rigorous academic discipline of great importance to the future careers of many pupils \cite{compSchools}.
+\paragraph{Recent initiatives in the UK:}  There has been a series of interesting related work in the UK culminating in a series of reports over the last two years.
 
-\textbf{Need to put in more initiatives taking place around the world.}\\
 
-\section{Experiment}
+The \textit{Computing in Schools}\footnote{\url{https://royalsociety.org/education/policy/computing-in-schools/}} project was an initiative coordinated by the Royal Society in cooperation with 18 UK universities  as well as several industry bodies culminating in a report published in January 2012 \cite{rcs-cis12}.  It notes the limitations of the previous National Curriculum in ICT, and emphasises the need to switch to `creative, rigorous
+and challenging Computer Science'.  It identifies that Computer Science is a rigorous academic discipline and that significant investment in continuing professional
+development for teachers will be needed.  
+
+Their suggested `terminological reform'  encapsulates the understood position of Computer Science from our perspective, but is nonetheless worth replicating here since it is not widely understood outside the discipline (Figure \ref{ref:terminology}).  While much of this document is discusses long-term funding needs and is thus directed at policy-makers, the emphasis on depth and rigour is similar in spirit to our PACT initiative.
+
+\begin{figure}\centering
+\includegraphics[width=.9\textwidth]{terminology}
+\caption{Suggested terminological reform from the 
+\textit{Computing in Schools} initiative, emphasising the distinctive identity of Computer Science.}
+\label{ref:terminology}
+\end{figure}
+
+
+
+
+The \textit{Computing at School}\footnote{\url{http://www.computingatschool.org.uk/}} initiative by the
+British Computer Society has produced a curriculum for schools that has been endorsed by Microsoft, Google and Intellect an d published in March 2012 \cite{bcs-curr12}.  This curriculum develops a clear agenda for computing-related concepts, stratified in five stages that cover primary and post primary education.  It clearly identifies Computer Science as a STEM discipline, distinguishes it from Information Technology, and emphasises core skills such as programming as well as more abstract skills such as designing algorithms and computational thinking.  While this \textit{Computing at School} is a much more ambitious agenda that the PACT initiative, it shares many of the themes and goals of PACT.
+
+The summary of key points from a related \textit{Computing at School} briefing note published in November 2011 \cite{cat-brief-11} is worth quoting in full, since it covers many of the key points that have informed the PACT initiative (see Figure \ref{fig:points}).  
+
+\begin{figure}
+\figline
+\begin{compactitem}
+\item It is vital to make a clear distinction between Computer Science as a rigorous subject
+discipline on the one hand, and IT applications and/or digital literacy on the other.
+\item Many countries, from the USA to India, routinely make Computer Science available to young people at school from an early age.
+\item There is increasing clarity that ``Computer Science'' means a lot more than ``Learn to program
+         in Java or C++''. Programming is central to computing, but the underlying principles of
+          algorithms, data structures, and computational thinking skills are both more fundamental
+         and more durable.
+\item The confusion between Computer Science and ICT skills means that ICT is often delivered by
+   non-specialists. Meanwhile, the continuing strong employer demand for IT professionals
+  reduces the supply of well-qualified potential teachers. These factors conspire to mean that
+ ICT/Computing teachers are under-valued and under-qualified. There is a desperate need
+for teacher training in Computer Science.
+\end{compactitem}
+\figline
+\caption{Key points identified by the \textit{Computing at Schools} group based on a study of the international experience with teaching computing in schools (direct quotation from \cite{cat-brief-11}).}
+\label{fig:points}
+\end{figure}
+
+
+\section{Our work to date}
 During the Summer of 2013 a number of schools were approached to gauge if there was interest in running such a pilot programme. The schools which came on board were:
 \begin{compactitem}
   \item Maynooth Post Primary School, Co. Kildare.
@@ -101,7 +159,10 @@ During the Summer of 2013 a number of schools were approached to gauge if there 
   \item Salesian College, Celbridge, Co. Kildare.
 \end{compactitem}
 
-At least one teacher from each of these schools agreed to participate in the pilot programme. The PACT team began to structure the content for the pilot programme and on the 25th of May and the 1st June 2013 two training sessions took place in NUIM. These sessions involved introducing the teachers to the content within the programme and also getting to know each other. It was hoped that a community of knowledge and learning would be created between all the teachers as they progressed with the pilot.
+At least one teacher from each of these schools agreed to participate in the pilot programme. 
+
+\paragraph{Teacher training sessions:}
+The PACT team began to structure the content for the pilot programme and on the 25th of May and the 1st June 2013 two training sessions took place in NUIM. These sessions involved introducing the teachers to the content within the programme and also getting to know each other. It was hoped that a community of knowledge and learning would be created between all the teachers as they progressed with the pilot.
 
 A Moodle system was hosted in the Department of Computer Science to store the content that was delivered in the training sessions. The content was divided in to five sections, namely:
 
@@ -113,15 +174,22 @@ A Moodle system was hosted in the Department of Computer Science to store the co
   \item Recursion and self-reference.
 \end{compactenum}
 
-Sections 1 and 2 provided an introduction to the Python programming language. These sections covered the basics of installation of Python and also looked at how to create and run programs written in Python. They looked at the main features of the language and gave sample programs for the teachers to use. An exercise book was created for all lessons within these sections which the teacher could use in class to get their students working in Python. In total 19 presentations were prepared for these sections which the teacher could break up into whatever format they felt worked for them. Section 3 focused on Algorithms and the process of writing them. It showed how to write a step by step procedure to solve particular problems. Section 4 looked at generating graphics using the Pygame set of modules. This section focused on allowing the participants to create fully featured games in the python language. Section 5 covers topics related to recursion which has been defined as ``the process of repeating items in a self-similar way" and is fundamental to the core theory of Computer Science. \\
+
+The content was based on the \textit{Python} programming language\footnote{\url{https://www.python.org/}}. 
+\textit{Python} is a dynamically-typed programming language that is popular in the CoderDojos as a first programming language, but also is used in a number of professional and scientific applications.  The choice of programming language is not essential for the syllabus, and we envisage providing options for teachers who wish to develop using other languages such as \textit{Processing} or \textit{Haskell}.
+
+Sections 1 and 2 of the training sessions covered the basics of installation of \textit{Python} and also looked at how to create and run programs written in \textit{Python}. They looked at the main features of the language and gave sample programs for the teachers to use. 
+An exercise book was created for all lessons within these sections which the teacher could use in class to get their students working in \textit{Python}. In total 19 PowerPoint presentations were prepared for these sections which the teacher could break up into whatever format they felt worked for them. 
+
+Section 3 focused on algorithms and the process of analysing problems to devise abstract computational solutions.  It showed how to write a step by step procedure to solve some classic problems in Computer Science. Section 4 looked at generating simple 2-D graphics using the \textit{Pygame} set of modules. This section focused on allowing the participants to create fully featured games in the \textit{Python} language, and can provide a useful focus for project-based programming work.  Section 5 covered topics related to recursion which has been defined as ``the process of repeating items in a self-similar way" and is fundamental to the core theory of Computer Science. \\
 
 
 \textbf{Should we put in learning outcomes here??}
 \newline
 
 
-
-Towards the end of the academic year 2013-14 we are going to host a competition which is open to all the students who were involved with the PACT pilot programme. This competition is aimed at providing examples of best practice and each school participating in the pilot is invited to select up to two teams, consisting of 3-5 students, to participate in the competition. The selection of teams and team members is entirely at the discretion of the schools. Participants in the competition should highlight explicitly how their experience with the PACT programme has contributed to two or more of the six key areas identified by the NCCA, namely:
+\paragraph{Competition:}
+Towards the end of the academic year 2013-14 we are going to host a competition which is open to all the students who were involved with the PACT pilot programme. This competition is aimed at providing examples of best practice and each school participating in the pilot is invited to select up to two teams, consisting of 3-5 students, to participate in the competition. The selection of teams and team members is entirely at the discretion of the schools. Participants in the competition should highlight explicitly how their experience with the PACT programme has contributed to two or more of the six key areas identified by the NCCA \cite{ncca2013}, namely:
 
 \begin{compactenum}
   \item Managing Myself.
@@ -129,7 +197,7 @@ Towards the end of the academic year 2013-14 we are going to host a competition 
   \item Communicating.
   \item Being Creative.
   \item Working with Others.
-  \item Managing Information and Thinking \cite{ncca2013}.
+  \item Managing Information and Thinking.
 \end{compactenum}
 
 
@@ -147,6 +215,19 @@ These schools have approached us directly from seeing our webpage or from teache
 
 \section{Contact Us}
 The PACT team can be contacted at the following email address: \url{pact@cs.nuim.ie}.
+
+The member of the Computer Science department currently involved in the PACT initiative are:
+Aidan Mooney (coordinator),
+Susan Bergin,
+Joe Duffin,
+Phil Maguire,
+Rosemary Monahan,
+Tom Naughton and
+James F. Power. 
+
+
+
+
 Our website is: \url{http://www.cs.nuim.ie/pact}.
 
 \bibliographystyle{alpha}
