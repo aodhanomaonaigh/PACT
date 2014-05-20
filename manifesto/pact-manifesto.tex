@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{paralist}
-
+\usepackage[official]{eurosym}
 \def\figline{\rule{\textwidth}{0.3mm}}
 
 \begin{document}
@@ -12,7 +12,7 @@
 
 \title{PACT: \\ {\large Programming ${\land}$ Algorithms $\Rightarrow$ Computational Thinking}}
 
-\author{Aidan Mooney, Joseph Duffin \and James F. Power}
+\author{Aidan Mooney, Joseph Duffin, Rosemary Monahan and James F. Power}
 
 \begin{figure}\centering
 \includegraphics[height=.2\textheight]{nuim_large.jpg}
@@ -26,7 +26,7 @@ The PACT programme is a partnership between researchers in the Department of Com
 Initially the focus of this partnership is on teaching programming to transition year students, but ultimately the goal is to develop a framework for delivering a short course on \textit{computational thinking} as part of the new Junior Certificate cycle.
 
 
-\section{Background and Motivation}
+\section{Background and Motivation} \label{Background}
 
 NUI Maynooth has been delivering programmes in Computer Science at undergraduate and postgraduate level for 25 years and, since 2012, has been delivering a unique \textit{BSc in Computational Thinking}.  This degree is a blend of Computer Science, Mathematics and Philosophy, and aims to provide a deeper education in computing than the more traditional degrees, which often have a strong vocational orientation.  The PACT initiative aims to build on the visibility of the \textit{Computational Thinking} brand to bring the ideas at the heart of this degree to second-level students.
 
@@ -34,12 +34,7 @@ NUI Maynooth has been delivering programmes in Computer Science at undergraduate
 
 The phrase \textit{Computational Thinking} was originally coined in the context of mathematics education by by Seymour Papert \cite{papert96}, but came to prominence in Computer Science following an influential article by Jeannette M. Wing \cite{wing-cacm06}.  Wing's article described computational thinking as
 \begin{quotation}
-``Computational thinking
-builds on the power and
-limits of computing
-processes, whether they are executed by a human or by a
-machine.  Computational thinking confronts the riddle of machine intelligence: What can humans do better than computers? and What can computers do better than humans? Most fundamentally it addresses the question: What is
-computable?''
+``Computational thinking builds on the power and limits of computing processes, whether they are executed by a human or by a machine.  Computational thinking confronts the riddle of machine intelligence: What can humans do better than computers? and What can computers do better than humans? Most fundamentally it addresses the question: What is computable?''
 \end{quotation}
 
 
@@ -57,7 +52,7 @@ everyone, not just for computer scientists.
 \end{compactitem}
 
 
-\paragraph{Computational Thinking in Schools.}
+\paragraph{Computational Thinking in Schools.} \label{par:CTSchools}
 
 There have been numerous efforts over the years to introduce computational concepts into Irish secondary schools but, at an official level, these never proceeded much beyond basic elements of information technology.  The reform of the Junior Certificate cycle offers an opportunity to get this right: a course designed by Computer Scientists to display the depth and beauty of the field in a way that can challenge and engage second-level students.  An emphasis on 
 \textit{Computational Thinking} allows us to explore the key concepts the underlie Computer Science, without necessarily having to achieve the full rigour of the professional scientific discipline.
@@ -74,7 +69,7 @@ The goal of the PACT programme is to guide students through the key topics in pr
 
 The PACT group at NUIM has collaborated with teachers across 9 secondary schools to develop a flexible module which will engage Transition Year students.  The focus of the module is not on learning facts about computers but on developing creative ideas and new ways of thinking.  Continuing feedback will be used to expand the module into a full Junior Cycle short course. 
 
-\section{Related work}
+\section{Related work} \label{sect:relWork}
 
 The NCCA has developed a specification for eight Junior Cycle short courses for use from 2014, and one of these is 
 titled \textit{Programming and Coding} \cite{ncca-prog13}.  This is a useful document as it provides an example of addressing the general skills requirements of a short course.  The computing content seems to consists of basic programming skills along with some multimedia (web page) design, with a goal of developing students teamwork skills.  
@@ -116,9 +111,6 @@ Their suggested `terminological reform'  encapsulates the understood position of
 \textit{Computing in Schools} initiative, emphasising the distinctive identity of Computer Science.}
 \label{ref:terminology}
 \end{figure}
-
-
-
 
 The \textit{Computing at School}\footnote{\url{http://www.computingatschool.org.uk/}} initiative by the British Computer Society has produced a curriculum for schools that has been endorsed by Microsoft, Google and Intellect an d published in March 2012 \cite{bcs-curr12}.  This curriculum develops a clear agenda for computing-related concepts, stratified in five stages that cover primary and post primary education.  It clearly identifies Computer Science as a STEM discipline, distinguishes it from Information Technology, and emphasises core skills such as programming as well as more abstract skills such as designing algorithms and computational thinking.  While this \textit{Computing at School} is a much more ambitious agenda that the PACT initiative, it shares many of the themes and goals of PACT.
 
@@ -184,7 +176,7 @@ In summary, the principal initiatives from the UK, USA and other countries empha
 \end{compactitem}
 
 
-\section{Our work to date}
+\section{Our work to date} \label{sect:OurWork}
 During the Summer of 2013 a number of schools were approached to gauge if there was interest in running such a pilot programme. The schools which came on board were:
 \begin{compactitem}
   \item Maynooth Post Primary School, Co. Kildare.
@@ -201,7 +193,7 @@ At least one teacher from each of these schools agreed to participate in the pil
 \paragraph{Teacher training sessions:}
 The PACT team began to structure the content for the pilot programme and on the 25th of May and the 1st June 2013 two training sessions took place in NUIM. These sessions involved introducing the teachers to the content within the programme and also getting to know each other. It was hoped that a community of knowledge and learning would be created between all the teachers as they progressed with the pilot.
 
-A Moodle system was hosted in the Department of Computer Science to store the content that was delivered in the training sessions. The content was divided in to five sections, namely:
+A Moodle system was hosted in the Department of Computer Science to store the content that was delivered in the training sessions. The content was divided in to five components, namely:
 
 \begin{compactenum}
   \item Introduction to Python I.
@@ -215,11 +207,10 @@ A Moodle system was hosted in the Department of Computer Science to store the co
 The content was based on the \textit{Python} programming language\footnote{\url{https://www.python.org/}}. 
 \textit{Python} is a dynamically-typed programming language that is popular in the CoderDojos as a first programming language, but also is used in a number of professional and scientific applications.  The choice of programming language is not essential for the syllabus, and we envisage providing options for teachers who wish to develop using other languages such as \textit{Processing} or \textit{Haskell}.
 
-Sections 1 and 2 of the training sessions covered the basics of installation of \textit{Python} and also looked at how to create and run programs written in \textit{Python}. They looked at the main features of the language and gave sample programs for the teachers to use. 
+Components 1 and 2 of the training sessions covered the basics of installation of \textit{Python} and also looked at how to create and run programs written in \textit{Python}. They looked at the main features of the language and gave sample programs for the teachers to use. 
 An exercise book was created for all lessons within these sections which the teacher could use in class to get their students working in \textit{Python}. In total 19 PowerPoint presentations were prepared for these sections which the teacher could break up into whatever format they felt worked for them. 
 
-Section 3 focused on algorithms and the process of analysing problems to devise abstract computational solutions.  It showed how to write a step by step procedure to solve some classic problems in Computer Science. Section 4 looked at generating simple 2-D graphics using the \textit{Pygame} set of modules. This section focused on allowing the participants to create fully featured games in the \textit{Python} language, and can provide a useful focus for project-based programming work.  Section 5 covered topics related to recursion which has been defined as ``the process of repeating items in a self-similar way" and is fundamental to the core theory of Computer Science. \\
-
+Component 3 focused on algorithms and the process of analysing problems to devise abstract computational solutions.  It showed how to write a step by step procedure to solve some classic problems in Computer Science. Component 4 looked at generating simple 2-D graphics using the \textit{Pygame} set of modules. This section focused on allowing the participants to create fully featured games in the \textit{Python} language, and can provide a useful focus for project-based programming work.  Component 5 covered topics related to recursion which has been defined as ``the process of repeating items in a self-similar way" and is fundamental to the core theory of Computer Science. \\
 
 %\newline
 
@@ -236,7 +227,7 @@ Section 3 focused on algorithms and the process of analysing problems to devise 
 %  \item Managing Information and Thinking.
 %\end{compactenum}
 
-\section{Feedback}
+\section{Feedback} \label{label:Feedback}
 Towards the end of the 2013-14 academic year the PACT team organised for surveys to be made available for teachers who taught the PACT material \footnote{\url{https://docs.google.com/forms/d/1-17vL9ZxeTVIKfJcsNm0rMDiJsISttpcA2Cm5VQVLvk/viewform}} and also for the students who took the module \footnote{\url{https://docs.google.com/forms/d/1_l0fmD1C9aLeD7pwdl5a9Im4Or3ZzuvHe6MfsD5KOs0/viewform}}. 
 
 To date there have been $62$ student responses and $7$ teacher responses.  These $7$ teachers represented $5$ schools within these $5$ schools $294$ took the module across $13$ class groups. There was one all-girls school, one all-boys school and three mixed schools. It is clear from the teacher responses that unless there is complete support and buy-in from the management of the school courses like this will not survive.  One teacher commented that ``The pupils were very keen to learn how programming was being used in the working world", something that the PACT team has tried to incorporate in to the module.
@@ -266,7 +257,7 @@ When the students were asked to provide some overall feedback on the programme a
 \end{compactitem}  
 
 
-\section{Future Work}
+\section{Future Work} \label{Sect:FutWork}
 As of the 15th May 2014 we have already received interest from the following schools:
 \begin{compactitem}
   \item Tallaght Community School, Dublin. 
@@ -276,13 +267,22 @@ As of the 15th May 2014 we have already received interest from the following sch
   \item Coláiste Cois Life, Lucan, Dublin.
   \item St. Wolstans Community School, Celbridge, Kildare. 
   \item Colaiste Chiarain, Leixlip, Kildare. 
+  \item Colaiste Bríde, Clondalkin, Dublin.
 \end{compactitem}  
 
 The majority of these schools have approached us directly from seeing our webpage or from teachers who are involved in the pilot programme this year. We have also distributed letters to 10 schools based on their proximity to NUIM that are not currently enrolled in PACT. We hope to run this programme again for the academic year 2014-15 with a larger number of schools and take on board the feedback received from the teachers and students in the first year.
 
 During the Summer of 2014 a student intern will be working with the PACT team to develop further resources for teachers, develop a wiki with resources for students and analyse possible future developments for PACT, amongst other things.
 
-\section{Contact Us}
+
+\section{Future funding initiative} \label{Sect:FutFunding}
+The Erasmus+ Programme which commenced on the 1st January 2014 offers the opportunity for Strategic Partnerships for organisations involved in school education. As outlined in Section \ref{par:CTSchools}, other Irish and international initiatives in teaching basic programming skills and multimedia design, aim to develop student teamwork and communication skills. While these initiatives are welcome, they are limited in that they do not address the broader principles of Computer Science. Initiatives to introduce Computer Science to schools in Europe and in the USA have concluded that there is a need to reform Computer Science education at post-primary level to promote  both Computer Science and digital literacy. 
+
+The NUIM PACT programme provides the ground work for such a reform in Computer Science. It places NUIM in the ideal position of leading an Erasmus+ Strategic Partnership (under Key Activity 2) which would be funded for 3 years. These partnerships focus on activities designed to improve education provision across the participating countries, promoting cross-sectoral cooperation and addressing policy objectives, challenges and the needs of a specific field such as post-primary and third-level education.  Through such a strategic partnership with schools, universities and industry, we will be empowered to implement joint initiatives on programme curriculum and teaching training, as well as promoting exchange of experience and know-how. In 2014 the allocation of funding in Ireland for such a partnership was \euro 450,000. It is expected that the funding available n 2015 will be increased and the application deadline will be in April 2015.  
+
+
+
+\section{Contact Us} \label{Sect:ContactUs}
 The PACT team can be contacted at the following email address: \url{pact@cs.nuim.ie}.
 
 The member of the Computer Science department currently involved in the PACT initiative are:
@@ -299,6 +299,6 @@ James F. Power.
 
 Our website is: \url{http://www.cs.nuim.ie/pact}.
 
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}%{plain}
 \bibliography{ref}
 \end{document}
