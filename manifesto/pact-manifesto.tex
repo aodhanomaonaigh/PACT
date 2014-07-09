@@ -251,7 +251,7 @@ When the students were asked to provide some overall feedback on the programme a
 \begin{compactitem}
   \item ``I feel it should be continued as it seemed very beneficial and helpful for the other lads but it just wasn't for me really . One way I think it could be improved would be if there was some kind of game involved rather than just doing exercises all the time.". 
   \item ``It was very enjoyable and different. Sometimes it was very hard but extremely good and beneficial".
-  \item ``It was good to learn how to programme/ make programmes.".
+  \item ``It was good to learn how to programme/ make programmes (sic).".
   \item ``I thought the whole program was good, and I did look forward to each class. I think that the questions that are posed to do should be a bit more practical and try give the user more of feeling of what the computer is actually doing. Example of where I previously learned code can be seen in Lua, from ComputerCraft. There is a ComputerCraft Edu that teaches people lua. This could be used to show people how code works and impacts better that through the IDLE.".
 \end{compactitem}  
 
@@ -306,7 +306,9 @@ Our website is: \url{http://www.cs.nuim.ie/pact}.
 
 \section{Appendix: Computational thinking outside of computer science}\label{apx:CTOutside}
 
-\subsection{A broad example: computational thinking for managers}
+We argue that examples of computational thinking problem instances can be found in everyday life, at home and in the workplace. Not only is it essential for computer scientists, and advantageous for those in senior management and senior technical positions, but it may indeed be useful for everyone to hone this innate high-order cognative skill. We present the following examples to illustrate.
+
+\subsection{Management}
 
 In the workplace, the job description of each level of management can be shown to require computational thinking.
 Management implies managing resources.
@@ -316,6 +318,25 @@ Finding a way to quantify abstract resources, such as those related to human res
 However, measures such as time, money, speed, volume are already in a natural form for computational thinking.
 At its most mathematical, computational thinking would allow a manager to prove that given a particular set of resources, a solution to a particular task is impossible, possible, or optimal.
 
-%\subsection{Route planning}
+\subsection{Route planning}
+
+Consider a day's list of errands that includes dropping off the family cat to the vet, collecting dry cleaning, buying fresh meat at the butcher's, buying frozen food at the supermarket, buying postage for a letter, and browsing for a new book of bedtime stories at the local library. Consider constraints such as the cat cannot be brought into the butcher's, you cannot carry both the cat and the dry cleaning at the same time, and as soon as you purchase the frozen food you must return home. Can you complete this list of errands in one trip? If one has ever planned a list of errands such as this into a single trip, one has practiced computational thinking. Further, given additional constraints such as knowledge of the travel time between each pair of destinations, and that the library closes at 13:00 for lunch, can you complete your list of errands in time for a 14:15 tennis match if you leave home at 12:45? Again, this is a classic computational thinking problem instance.
+
+%\subsection{Queueing}
+
+\subsection{Sorting}
+
+Consider a person who arbitrarily picks two socks to wear each morning from a closet drawer containing individual socks. This drawer was originally full of indentical individual black socks, but after many weeks of wearing, washing, and bleaching in the sun, the socks exhibit a nonuniform range of different shades of black. A sensible person would probably ignore these shades and continue to pick any two socks each morning. However, if one \emph{did} try to match socks by colour as best one could (or `good enough' according to some threshold of colour difference), no matter what one's system was, one would be practicing computational thinking. At its most mathematical, computational thinking requires one to analyse the result of one's computational thinking, to determine whether one's sock matching system was optimal or not.
+
+\subsection{Summing}
+
+Consider a schoolteacher who wishes to divide the class into two basketball teams of equal ability. The schoolteacher knows the skill level of each of their pupils. If the schoolteacher genuinely attempts to solve this problem, no matter what system they choose, they are practicing computational thinking.
+
+
+\subsection{$\mathcal{NP}$-complete problems}
+
+A University has $n$ clubs and societies, the largest of which contains $m$ members. Each students can be a member of multiple clubs and societies. The President of the University wishes to hold a dinner in honour of such student activities. Unfortunately, the Grand Hall can seat comfortably only $k$ guests. The President's problem is as follows: can she construct a guest list of $k$ students such that every club and society has at least one member in attendance? Solving this problem is an exercise in computational thinking. It is not known if it is possible to develop an efficient system that solves this problem for arbitrary values of $n$, $m$, and $k$. If one finds an efficient system, and makes it public, each large corporation worldwide would shave percentage points off its running costs. If one proves such an efficient system cannnot exist, the Clay Mathematics Institute will give a prize of US\$ 1 million. Characterising the true difficulty of problems such as this clubs and societies problem (more formally, the hitting set problem) is one of the hardest tasks for computer science: the famous $\mathcal{P}=\mathcal{NP}$ question. Timetabling classes in a school, scheduling appointments in a hospital, optimising a fleet of delivery trucks, air traffic control, and so on, are mathematically identical problems to the hitting set problem; by which we mean that solving any one immediately solves each of the others. Therefore, we can say that instances of this one family of problems have to be solved in society every day, and we don't know if we could be doing it better.
+
 
 \end{document}
+
